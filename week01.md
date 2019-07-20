@@ -1,5 +1,3 @@
-# week01
-
 # Algorithm
 
 ## 1.Title  
@@ -13,9 +11,9 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 
-## 3.Code  
+## 3.Solution   
 
-自己的答案
+### 3.1 自己的解答
 ```
  public int[] twoSum1(int[] nums, int target) {
         int[] result = new int[2];
@@ -36,7 +34,7 @@ return [0, 1].
     }
 ```
 
-别人的答案
+### 3.2 其他coder的解答
 ```
  public int[] twoSum2(int[] nums, int target) {
         HashMap<Integer,Integer> map = new HashMap<>();
@@ -59,8 +57,7 @@ return [0, 1].
 
 
 # Tip
-这个是自己工作中解决问题收获的某一个知识点。
-	[tomcat之cookie中的双引号](https://blog.csdn.net/qq_29340989/article/details/90346079)
+这个是自己工作中解决问题收获的某一个知识点。[tomcat之cookie中的双引号](https://blog.csdn.net/qq_29340989/article/details/90346079)
 
 
 # Share
