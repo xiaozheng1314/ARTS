@@ -2,18 +2,18 @@
 
 # Algorithm
 
-# title
+1.title
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
-# Example
+2.Example
 Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 
-# Code
+3.Code
 
 自己的答案
 ```
@@ -50,7 +50,7 @@ return [0, 1].
         throw new IllegalArgumentException("no two sum solution");
     }
 ```
-# summary
+4.summary
 
 明显通过这两段的coding，能看出第二种解题的巧妙之处，希望在后面的解题过程中，加强思路和数据结构的锻炼。
 
