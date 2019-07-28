@@ -22,7 +22,7 @@ Given a 32-bit signed integer, reverse digits of an integer.
 给出自己的解答和解题思路，以及leetcode上给出的解题思路
 
 ### 3.1 自己的解答,时间复杂度：O(log10(x))，空间复杂度O(log10(x))
-时间和空间复杂度：比如值是100，则list的size为3，log10(10^2)+1，遍历的次数为2
+时间和空间复杂度：比如值是100，则list的size为3，log10(10^2)+1，遍历的次数为2   
 ```
 import java.util.ArrayList;
 import java.util.List;
@@ -58,8 +58,8 @@ class Solution {
 ```
 
 ### 3.2 leetcode解答，时间复杂度O(log10(x))，空间复杂度O(1)
-   解题思路：
-    在反转过程中，可能会导致溢出情况，所以通过反推法，找出超出int类型时，除以10的次数
+解题思路：
+在反转过程中，可能会导致溢出情况，所以通过反推法，找出超出int类型时，除以10的次数
 ```
 public int reverse(int x) {
         int rev = 0;
@@ -75,7 +75,7 @@ public int reverse(int x) {
 ```
 
 ## 4.summary  
-    首先没有考虑到反转后值溢出情况，其次没有想过可以通过反推找出最大的次数，需要借鉴。
+首先没有考虑到反转后值溢出情况，其次没有想过可以通过反推找出最大的次数，需要借鉴。
 
 # Algorithm Two
 
@@ -98,7 +98,7 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
 
 
 ## 3.Solution   
-    给出自己的解答和解题思路，以及leetcode上给出的解题思路
+给出自己的解答和解题思路，以及leetcode上给出的解题思路
 
 ### 3.1 自己的解答
 解题思路：
@@ -147,7 +147,7 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
     }
 ```
 ## 4.summary  
-    通过两种解题思路，可以看出自己忽略了转换后数字可能会超出int类型最大值，导致溢出发生，在做完算法一后没有先去看，在做第二题时还是没有考虑到这种情况；同时在考虑边界条件时，没有考虑到个位是0的数。
+通过两种解题思路，可以看出自己忽略了转换后数字可能会超出int类型最大值，导致溢出发生，在做完算法一后没有先去看，在做第二题时还是没有考虑到这种情况；同时在考虑边界条件时，没有考虑到个位是0的数。
     
 
 # Algorithm Three
@@ -172,7 +172,7 @@ Given a roman numeral, convert it to an integer. Input is guaranteed to be withi
 注：具体什么属于roman数，详见leetcode 第13题
 
 ## 3.Solution   
-    主要是给出自己的解答和浏览看到的解题思路中，觉得比较好的
+主要是给出自己的解答和浏览看到的解题思路中，觉得比较好的
 
 ### 3.1 自己的解答
 
@@ -243,7 +243,7 @@ public int romanToInt(String s){
 
 ### 3.2 题友的解答二
 
-    这个解答，考虑到罗马数中不会出现IXIX这种情况，个人觉得很赞，这是对罗马数的表示和对题理解得很深刻才会想到的
+这个解答，考虑到罗马数中不会出现IXIX这种情况，个人觉得很赞，这是对罗马数的表示和对题理解得很深刻才会想到的
 
 ```
      public int romanToIntTwo(String s)  {
@@ -268,11 +268,11 @@ public int romanToInt(String s){
     }
 ```
 ## 4.summary 
-    虽然自己做出了这道题，但是通过后面两种解答，可以看出自己并没有完成理解罗马数的概念，后面需要加强对题目的理解。
+虽然自己做出了这道题，但是通过后面两种解答，可以看出自己并没有完成理解罗马数的概念，后面需要加强对题目的理解。
 
 # Review
-    这周看了什么是servlet以及servlet容器，servlet是由servlet容器管理，并且可以动态生成内容的一种java技术。
-    servlet容器也可以叫做servlet引擎，用来管理servlet，并控制servlet的生命周期，并且所有的servlet容器都必须支持HTTP/1.0和HTTP/1.1。
+这周看了什么是servlet以及servlet容器，servlet是由servlet容器管理，并且可以动态生成内容的一种java技术。   
+servlet容器也可以叫做servlet引擎，用来管理servlet，并控制servlet的生命周期，并且所有的servlet容器都必须支持HTTP/1.0和HTTP/1.1。
 
 
 # Tip
