@@ -22,7 +22,7 @@ Given a 32-bit signed integer, reverse digits of an integer.
 给出自己的解答和解题思路，以及leetcode上给出的解题思路
 
 ### 3.1 自己的解答,时间复杂度：O(log10(x))，空间复杂度O(log10(x))
-    时间和空间复杂度：比如值是100，则list的size为3，log10(10^2)+1，遍历的次数为2
+时间和空间复杂度：比如值是100，则list的size为3，log10(10^2)+1，遍历的次数为2
 ```
 import java.util.ArrayList;
 import java.util.List;
@@ -102,8 +102,8 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
 
 ### 3.1 自己的解答
 解题思路：
-    1）首先所有负数肯定不是水仙花数，0肯定是水仙花数
-    2）基于算法一中的反转一个数字，可以将反转后的数字和原始的数字比较，如果相等就是水仙花数
+    1）首先所有负数肯定不是水仙花数，0肯定是水仙花数  
+    2）基于算法一中的反转一个数字，可以将反转后的数字和原始的数字比较，如果相等就是水仙花数  
 
 ```
  public boolean isPalindrome(int x) {
@@ -126,12 +126,12 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
 ### 3.2 leetcode 的solution，时间复杂度O(log10(n))，空间复杂度O(1）
 
 解题思路：
-    1）首先负数和个数为0且该值不为0的数都不是水仙花数
-    2）由于数字反转后可能会超过int类型的最大值，所以只比较这个数字的一半
-    3）如何确定在反转的过程中，已经到达数字的一半了
-        当前半数字小于后半边数字时
-    4）当数字个数为奇数位时，如果是水仙花数，则前半部分数字等于后半部分数字
-       当数字个数为偶数位时，如果是水仙花数，则前半部分数字等于后半部分数字除以10
+    1）首先负数和个数为0且该值不为0的数都不是水仙花数.  
+    2）由于数字反转后可能会超过int类型的最大值，所以只比较这个数字的一半.   
+    3）如何确定在反转的过程中，已经到达数字的一半了.  
+        当前半数字小于后半边数字时.  
+    4）当数字个数为奇数位时，如果是水仙花数，则前半部分数字等于后半部分数字.  
+       当数字个数为偶数位时，如果是水仙花数，则前半部分数字等于后半部分数字除以10.  
 
 ```
   public boolean isPalindrome1(int x) {
@@ -148,7 +148,7 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
 ```
 ## 4.summary  
     通过两种解题思路，可以看出自己忽略了转换后数字可能会超出int类型最大值，导致溢出发生，在做完算法一后没有先去看，在做第二题时还是没有考虑到这种情况；同时在考虑边界条件时，没有考虑到个位是0的数。
-    还有就是不明白为什么时间复杂度是O（log10(n)),虽然给出了解释。
+    
 
 # Algorithm Three
 
@@ -301,9 +301,9 @@ public class Person {
     }
 }
 ```
-JVM运行图如下：
-![jvm运行图]（week02/jvm.jpg）
+JVM运行图如下：  
+![jvm运行图](week02/jvm.jpg)
 
 # Share
-[IntelliJ IDEA 快捷键终极大全](https://mp.weixin.qq.com/s/lgc6qowPvl0uJXAZJ0zawg)
+[IntelliJ IDEA 快捷键终极大全](https://mp.weixin.qq.com/s/lgc6qowPvl0uJXAZJ0zawg)  
 [IntelliJ IDEA 常用快捷键 - Mac版本](https://mp.weixin.qq.com/s/PVnJX9XpQ5L6XMIZshvyYA)
